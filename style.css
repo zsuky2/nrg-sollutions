@@ -53,9 +53,10 @@ body {
     justify-content: center;
 }
 
-.hero-container, .about-container {
+.hero-container, .about-container, .marketing-container, .webdevelopment-container {
     box-sizing: border-box;
     padding: 1rem;
+    margin-bottom: 1rem;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 15px;
     font-weight: 700;
@@ -87,5 +88,22 @@ body {
 .marketing-section{
 
     padding: 5rem;
+    background: url("marketing2.jpg") no-repeat center ;
+    background-size: cover;
     
+}
+
+.webdevelopment-section{
+
+    padding: 5rem;
+    background: url("web.jpg") no-repeat center fixed;
+    background-size: cover;
+    
+}
+
+
+
+.card{
+
+    background-color: rgba(255, 255, 255, 0.8);
 }
