@@ -13,31 +13,32 @@
 
 <body>
 
+    <a href="#"><i class="fa-solid fa-circle-arrow-up fa-2x " id="up"></i></a>
+
     <!-- Navigációs menü -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top px-3">
-        <a class="navbar-brand logo" href="#">NRG-Solutions</a>
+    <div class="d-flex flex-column p-2 flex-md-row align-items-center bg-dark">
+        <div class="dark-mode">
+            <h5 class="my-0 mx-auto logo" href="#">NRG-Solutions</h5>
+            <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
+            <label for="checkbox">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
 
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Főoldal</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#about">Rólunk</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#marketing">Online Marketing</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#webdevelopment">Webfejlesztés</a>
-            </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">Kapcsolat</a>
-            </li>
-        </ul>
-    </nav>
+        <nav class="my-1 my-md-0 mr-md-3 mx-auto">
+            <a class="p-1 text-light" href="#">Főoldal</a>
+            <a class="p-1 text-light" href="#about">Rólunk</a>
+            <a class="p-1 text-light" href="#marketing">Online Marketing</a>
+            <a class="p-1 text-light" href="#webdevelopment">Webfejlesztés</a>
+        </nav>
+        <a class="btn btn-danger contact p-2 text-light" href="#contact">Kapcsolat</a>
+    </div>
+
     <!--Hero section - Rövid leirás, cégnév-->
-    <section class="hero-section text-white">
+    <section class="hero-section">
         <div class="container hero-container">
             <div class="row justify-content-center">
                 <div class="text-center">
@@ -53,7 +54,7 @@
     <!--Rólunk-->
     <a name="about"></a>
     <section class="about-section">
-        <div class="container about-container text-center">
+        <div class="container about-container my-5 text-center">
             <h2>Rólunk</h2>
             <p>Kreatív megoldásokkal dolgozunk a teljes folyamatot kézben tartva, az ötlettől a tervezésen át egészen a
                 kivitelezést követő kampánymanagementig úgy, hogy ügyfeleink igényeit és lehetőségeit végig szem előtt
@@ -64,163 +65,164 @@
 
     <!--Szolgálatások - Online marketing-->
     <a name="marketing"></a>
-    <section class="marketing-section">
-        <div class="marketing-container">
-            <div class="mx-auto text-center">
-                <h1 class="display-4">Online marketing szolgáltatások</h1>
-                <p class="lead">Személyre szabott marketing szolgáltatások: egyedi, kreatív megoldásokat alkalmazva
-                    keressük
-                    meg a célpiacod és szólítjuk meg a potenciális ügyfeleket. </p>
-            </div>
-
+    <section class="marketing-section my-5">
+        <div class="container marketing-container">
             <div class="container">
-                <div class="card-deck mb-3 text-center">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card mb-4 box-shadow">
-                                <div class="card-header">
-                                    <h4 class="my-0 font-weight-normal">Egyedi ajánlat</h4>
-                                </div>
-                                <div class="card-body">
+                <div class="text-center">
+                    <h1>Online marketing szolgáltatások</h1>
+                    <p>Személyre szabott marketing szolgáltatások: egyedi, kreatív megoldásokat alkalmazva
+                        keressük
+                        meg a célpiacod és szólítjuk meg a potenciális ügyfeleket. </p>
+                </div>
 
-                                    <ul class="list-unstyled mt-3 mb-4">
-                                        <li>Személyre szabott szolgáltatások, melyeket igényfelmérés keretében
-                                            egyeztetünk
-                                        </li>
-                                    </ul>
-                                    <a href="#contact" type="button"
-                                        class="btn btn-lg w-50 btn-outline-danger">Ajánlatkérés</a>
+                <div class="card-container">
+                    <div class="card-deck mb-3 text-center">
+                        <div class="row">
+                            <div class="col-md-6 col-xl-3">
+                                <div class="card mb-4 box-shadow">
+                                    <div class="card-header">
+                                        <h4 class="my-0 font-weight-normal">Egyedi ajánlat</h4>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li>• Személyre szabott szolgáltatások, melyeket igényfelmérés keretében
+                                                egyeztetünk
+                                            </li>
+                                        </ul>
+                                        <a class="btn btn-outline-danger contact p-2 text-dark"
+                                            href="#contact">Ajánlatkérés</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-3">
+
+                                <div class="card mb-4 box-shadow">
+                                    <div class="card-header">
+                                        <h4 class="my-0 font-weight-normal">Alap csomag</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li>• Igényfelmérés</li>
+                                            <li>• Kampánymenedzsment</li>
+                                            <li>• Google Ads / Facebook Business hirdetés kezelés</li>
+                                            <li>• Eredmények havi egyszeri átbeszélése</li>
+                                        </ul>
+                                        <a class="btn btn-outline-danger contact p-2 text-dark"
+                                            href="#contact">Ajánlatkérés</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-3">
+                                <div class="card mb-4 box-shadow">
+                                    <div class="card-header">
+                                        <h4 class="my-0 font-weight-normal">Haladó csomag</h4>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li>• Igényfelmérés</li>
+                                            <li>• Kulcsszókutatás, konkurencia felmérés</li>
+                                            <li>• Google Ads / Facebook Business hirdetés kezelés</li>
+                                            <li>• Kreatív tartalmak gyártása hirdetésekhez</li>
+                                            <li>• Eredmények 2 hetente történő átbeszélése</li>
+                                        </ul>
+                                        <a class="btn btn-outline-danger contact p-2 text-dark"
+                                            href="#contact">Ajánlatkérés</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-3">
+                                <div class="card mb-4 box-shadow">
+                                    <div class="card-header">
+                                        <h4 class="my-0 font-weight-normal">Prémium csomag</h4>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li>• Igényfelmérés</li>
+                                            <li>• Weboldal SEO felülvizsgálata</li>
+                                            <li>• Egyedi marketingterv készítése</li>
+                                            <li>• Kulcsszókutatás, konkurencia felmérés</li>
+                                            <li>• Kampánymenedzsment</li>
+                                            <li>• Google Ads / Facebook Business / Instagram hirdetés kezelés</li>
+                                            <li>• Kreatív tartalmak gyártása hirdetésekhez</li>
+                                            <li>• Rendszeres egyeztetés a teljesítménnyel kapcsolatban</li>
+                                        </ul>
+                                        <a class="btn btn-outline-danger contact p-2 text-dark"
+                                            href="#contact">Ajánlatkérés</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                    </div>
+                </div>
 
-                            <div class="card mb-4 box-shadow">
-                                <div class="card-header">
-                                    <h4 class="my-0 font-weight-normal">Alap csomag</h4>
-                                </div>
-                                <div class="card-body">
-                                    <ul class="list-unstyled mt-3 mb-4">
-                                        <li>Igényfelmérés</li>
-                                        <li>Kampánymenedzsment</li>
-                                        <li>Google Ads / Facebook Business hirdetés kezelés</li>
-                                        <li>Eredmények havi egyszeri átbeszélése</li>
-                                    </ul>
-                                    <a href="#contact" type="button" class="btn btn-lg w-50 btn-outline-danger">
-                                        Ajánlatkérés</a>
+                <!--Kiegészítő szolgáltatások-->
+
+                <div class="mx-auto text-center">
+                    <h2 class="display-4">Kiegészítő szolgáltatások</h2>
+                </div>
+                <div class="card-container">
+                    <div class="card-deck mb-3 text-center">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card mb-4 box-shadow">
+                                    <div class="card-header">
+                                        <h4 class="my-0 font-weight-normal">Háttérrendszerek paraméterezése</h4>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li>• Google cégem fiók létrehozása</li>
+                                            <li>• Youtube fiók létrehozása</li>
+                                            <li>• Instagram fiók létrehozása</li>
+                                            <li>• Facebook oldal létrehozása</li>
+                                            <li>• Google teljes háttérrendszer létrehozása, paraméterezése</li>
+                                            <li>• Facebook hirdetéskezelő létrehozása, paraméterezése</li>
+                                            <li>• Weboldal SEO felülvizsgálata</li>
+                                        </ul>
+                                        <a class="btn btn-outline-danger contact p-2 text-dark"
+                                            href="#contact">Ajánlatkérés</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card mb-4 box-shadow">
-                                <div class="card-header">
-                                    <h4 class="my-0 font-weight-normal">Haladó csomag</h4>
-                                </div>
-                                <div class="card-body">
+                            <div class="col-md-6">
+                                <div class="card mb-4 box-shadow">
+                                    <div class="card-header">
+                                        <h4 class="my-0 font-weight-normal">Tanuljon szakértőktől</h4>
 
-                                    <ul class="list-unstyled mt-3 mb-4">
-                                        <li>Igényfelmérés</li>
-                                        <li>Kulcsszókutatás, konkurencia felmérés</li>
-                                        <li>Google Ads / Facebook Business hirdetés kezelés</li>
-                                        <li>Kreatív tartalmak gyártása hirdetésekhez</li>
-                                        <li>Eredmények 2 hetente történő átbeszélése</li>
-                                    </ul>
-                                    <a href="#contact" type="button"
-                                        class="btn btn-lg w-50 btn-outline-danger">Ajánlatkérés</a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="lead">Megtanulhatja menedzselni saját hirdetéseit</h4>
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li>• Igény és vállalkozás felmérése</li>
+                                            <li>• Személyre szabott képzés a Facebook üzleti fiók üzemeltetésében</li>
+                                            <li>• Személyre szabott képzés a Google Ads hirdetési fiók kezelésében</li>
+                                        </ul>
+                                        <a class="btn btn-outline-danger contact p-2 text-dark"
+                                            href="#contact">Ajánlatkérés</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card mb-4 box-shadow">
-                                <div class="card-header">
-                                    <h4 class="my-0 font-weight-normal">Prémium csomag</h4>
-                                </div>
-                                <div class="card-body">
 
-                                    <ul class="list-unstyled mt-3 mb-4">
-                                        <li>Igényfelmérés</li>
-                                        <li>Weboldal SEO felülvizsgálata</li>
-                                        <li>Egyedi marketingterv készítése</li>
-                                        <li>Kulcsszókutatás, konkurencia felmérés</li>
-                                        <li>Kampánymenedzsment</li>
-                                        <li>Google Ads / Facebook Business / Instagram hirdetés kezelés</li>
-                                        <li>Kreatív tartalmak gyártása hirdetésekhez</li>
-                                        <li>Rendszeres egyeztetés a teljesítménnyel kapcsolatban</li>
-                                    </ul>
-                                    <a href="#contact" type="button"
-                                        class="btn btn-lg w-50 btn-outline-danger">Ajánlatkérés</a>
-                                </div>
-                            </div>
                         </div>
-
                     </div>
                 </div>
             </div>
-
-            <!--Kiegészítő szolgáltatások-->
-            <div class="mx-auto text-center">
-                <h2 class="display-4">Kiegészítő szolgáltatások</h2>
-            </div>
-            <div class="container">
-                <div class="card-deck mb-3 text-center">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card mb-4 box-shadow">
-                                <div class="card-header">
-                                    <h4 class="my-0 font-weight-normal">Háttérrendszerek paraméterezése</h4>
-                                </div>
-                                <div class="card-body">
-
-                                    <ul class="list-unstyled mt-3 mb-4">
-                                        <li>Google cégem fiók létrehozása</li>
-                                        <li>Youtube fiók létrehozása</li>
-                                        <li>Instagram fiók létrehozása</li>
-                                        <li>Facebook oldal létrehozása</li>
-                                        <li>Google teljes háttérrendszer létrehozása, paraméterezése</li>
-                                        <li>Facebook hirdetéskezelő létrehozása, paraméterezése</li>
-                                        <li>Weboldal SEO felülvizsgálata</li>
-                                    </ul>
-                                    <a href="#contact" type="button"
-                                        class="btn btn-lg w-50 btn-outline-danger">Ajánlatkérés</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card mb-4 box-shadow">
-                                <div class="card-header">
-                                    <h4 class="my-0 font-weight-normal">Tanuljon szakértőktől</h4>
-
-                                </div>
-                                <div class="card-body">
-                                    <p class="lead">Megtanulhatja menedzselni saját hirdetéseit</p>
-                                    <ul class="list-unstyled mt-3 mb-4">
-                                        <li>Igény és vállalkozás felmérése</li>
-                                        <li>Személyre szabott képzés a Facebook üzleti fiók üzemeltetésében</li>
-                                        <li>Személyre szabott képzés a Google Ads hirdetési fiók kezelésében</li>
-                                    </ul>
-                                    <a href="#contact" type="button"
-                                        class="btn btn-lg w-50 btn-outline-danger">Ajánlatkérés</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
 
     <!--Webfejlesztés-->
     <a name="#webdevelopment"></a>
     <section class="webdevelopment-section">
-        <div class="webdevelopment-container">
-            <div class=" mx-auto text-center">
+        <div class="webdevelopment-container container">
+            <div class="mx-auto text-center">
                 <h2 class="display-4">Webfejlesztés</h2>
             </div>
-            <div class="container">
+            <div class="card-container">
                 <div class="card-deck mb-3 text-center">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12 col-lg-6">
                             <div class="card mb-4 box-shadow">
                                 <div class="card-header">
                                     <h4 class="my-0 font-weight-normal">Személyre szabott egyedi oldal</h4>
@@ -233,13 +235,13 @@
                                         folyamatba. <br> Ez a szolgáltatás azoknak szól, akik mernek igazán különlegesek
                                         lenni . </p>
 
-                                    <a href="#contact" type="button"
-                                        class="btn btn-lg w-50 btn-outline-danger">Ajánlatkérés</a>
+                                    <a class="btn btn-outline-danger contact p-2 text-dark"
+                                        href="#contact">Ajánlatkérés</a>
 
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-12 col-lg-6">
                             <div class="card mb-4 box-shadow">
                                 <div class="card-header">
                                     <h4 class="my-0 font-weight-normal">Weboldal karbantartás</h4>
@@ -263,26 +265,54 @@
     </section>
 
     <!--Kapcsolat-->
+    <a name="contact"></a>
     <section class="contact-section">
-        
+        <div class="contact-container">
+            <div class="container">
+                <!--Jobb oldal-->
+                <form action="https://formsubmit.co/zhukovsky.esther@gmail.com" method="POST">
+                    <h2>Írj nekünk</h2>
 
-        <form action="https://formsubmit.co/zhukovsky.esther@gmail.com" method="POST">
-            Name:<br>
-            <input type="text" name="name"><br>
-            E-mail:<br>
-            <input type="text" name="mail"><br>
-            Comment:<br>
-            <input type="text" name="comment" size="50"><br><br>
-            <input type="submit" value="Send">
-            <input type="reset" value="Reset">
-        </form>
+
+                    <input type="text" name="Name" placeholder="Neved" required autocomplete="off" />
+                    <input type="email" name="E-mail"placeholder="E-mail címed" required autocomplete="off" />
+                    <input type="tel" name="Phone-number" placeholder="Telefonszámod" required autocomplete="off" />
+
+                    <select class="form-select form-select-lg" aria-label="Default select example">
+                        <option selected>Melyik szolgáltatás érdekel?</option>
+                        <option disabled><strong>Online Marketing szolgáltatások:</strong></option>
+                        <option value="1" name="egyedi">Egyedi ajánlat</option>
+                        <option value="2" name="alap">Alap csomag</option>
+                        <option value="3" name="halado">Haladó csomag</option>
+                        <option value="4" name="premium">Prémium csomag</option>
+                        <option value="5" name="paramterek">Háttérrendszerek paraméterezése</option>
+                        <option value="6" name="szakertok">Szakértőktől szeretnék tanulni</option>
+                        <option disabled><strong>Webfejlesztés szolgáltatások:</strong></option>
+                        <option value="7" name="egyediweb">Személyre szabott egyedi weboldal</option>
+                        <option value="8" name="weboldal k">Weboldal</option>
+                      </select>
+                    <input type="checkbox" name="adatkezeles" value="">
+                    <p>Elolvastam és megértettem az <strong>NRG-Solution</strong><em><a
+                                href="https://www.sikerfejlesztes.hu/adatkezelesi-tajekoztato/">Adatkezelési
+                                Tájékoztatóját és Szabályzatát</a></em> és
+                        hozzájárulok ahhoz, hogy a megadott adataimat a szolgáltató, mint adatkezelő a Szabályzatban
+                        foglaltaknak megfelelően kezelje. </p>
+
+                    <button id="send">Küldés</button>
+
+
+                </form>
+            </div>
+        </div>
     </section>
+
 
 
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
